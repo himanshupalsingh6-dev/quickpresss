@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Services – QuickPress</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
+<h2 style="padding:20px;">Choose Clothes</h2>
+
+<div class="product-grid" id="productGrid"></div>
+
+<a href="cart.html" class="floating-cart">🛒 View Cart</a>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+
+<script>
+  const grid = document.getElementById("productGrid");
+
+  products.forEach(p => {
+    grid.innerHTML += `
+      <div class="product-card">
+        <h4>${p.name}</h4>
+        <p>₹${p.price} / piece</p>
+        <button onclick="addToCart(${p.id})">Add</button>
+      </div>
+    `;
+  });
+</script>
+
+</body>
+</html>
