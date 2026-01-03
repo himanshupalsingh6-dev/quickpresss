@@ -1,1 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
+body {
+  background: #f6f6f6;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  background: #fff;
+  gap: 15px;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #16a34a;
+}
+
+.location {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.search {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.actions button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.cart {
+  background: #16a34a;
+  color: #fff;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(120deg, #16a34a, #22c55e);
+  margin: 20px;
+  border-radius: 16px;
+  padding: 40px;
+  color: white;
+}
+
+.hero h1 span {
+  font-weight: bold;
+}
+
+.hero button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #fff;
+  color: #16a34a;
+  font-weight: bold;
+}
+
+/* OFFERS */
+.offers {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+}
+
+.offer {
+  flex: 1;
+  padding: 20px;
+  border-radius: 16px;
+  color: #000;
+}
+
+.green { background: #d1fae5; }
+.yellow { background: #fef3c7; }
+.blue { background: #dbeafe; }
+
+.offer button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+}
+
+/* CATEGORIES */
+.categories {
+  display: flex;
+  gap: 12px;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.cat {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  min-width: 100px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
